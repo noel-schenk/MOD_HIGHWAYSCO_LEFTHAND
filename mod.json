@@ -1,0 +1,39 @@
+{
+  "id": "MOD_HIGHWAYSCO_LEFTHAND",
+  "name": "Left-Hand Traffic (LHT)",
+  "version": "1.0.0",
+  "author": "noelschenk",
+  "description": "Switches traffic to Left-Hand Traffic (LHT) — flipping road lanes, roundabouts, priority rules, signals, signs, and vehicle physics with a per-map toggle.",
+  "apiVersion": 1,
+  "entry": "index.js",
+  "tags": ["traffic", "lht", "lefthand", "roads", "simulation"],
+  "permissions": [
+    "world",
+    "sim",
+    "ui",
+    "events",
+    "storage",
+    "maps"
+  ],
+  "settings": [
+    {
+      "key": "defaultSide",
+      "type": "select",
+      "label": "Default Drive Side",
+      "description": "Drive side applied automatically to maps without a saved override.",
+      "default": "lht",
+      "options": [
+        { "value": "lht", "label": "Left-Hand Traffic (LHT)" },
+        { "value": "rht", "label": "Right-Hand Traffic (RHT)" }
+      ]
+    },
+    {
+      "key": "showToasts",
+      "type": "boolean",
+      "label": "Show Switch Notifications",
+      "description": "Show a toast notification when switching between LHT and RHT.",
+      "default": true
+    }
+  ],
+  "repository": "https://github.com/noelschenk/MOD_HIGHWAYSCO_LEFTHAND"
+}
